@@ -5,7 +5,8 @@ int main(){
     printf("Nhap so dong ban muon ghi vao tep: ");
     scanf("%d", &numLines);
     getchar();
-    FILE *file = fopen(fileName, "w");
+    FILE *file;
+	file = fopen(fileName, "w");
     if (file == NULL){
         perror("Khong the mo tep");
         return 1;

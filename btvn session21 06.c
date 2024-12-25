@@ -9,7 +9,8 @@ int main(){
         perror("Khong the mo tep nguon");
         return 1;
     }
-    FILE *dest = fopen(destFile, "w");
+    FILE *dest;
+	dest = fopen(destFile, "w");
     if (dest == NULL){
         perror("Khong the mo tep dich");
         fclose(source);
